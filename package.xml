@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>project11_operator</name>
+  <version>0.0.0</version>
+  <description>
+    Project11 operator specific packages
+  </description>
+
+  <author email="roland@ccom.unh.edu">Roland Arsenault</author>
+  <maintainer email="roland@ccom.unh.edu">Roland Arsenault</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>project11_platform</exec_depend>
+  <exec_depend>camp</exec_depend>
+  <exec_depend>joy_to_helm</exec_depend>
+  
+</package>

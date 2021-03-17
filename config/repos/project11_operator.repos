@@ -1,0 +1,9 @@
+repositories:
+  camp:
+    type: git
+    url: git@github.com:rolker/CCOMAutonomousMissionPlanner.git
+    version: noetic
+  joy_to_helm:
+    type: git
+    url: git@github.com:rolker/joy_to_helm.git
+    version: noetic

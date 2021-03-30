@@ -1,0 +1,12 @@
+<launch>
+  <arg name="robotNamespace" default="robot"/>
+  <arg name="remote" default="robot"/>
+  <arg name="namespace" default="operator"/>
+
+  <node pkg="rosservice" type="rosservice" name="get_container_init" args="call /$(arg namespace)/udp_bridge/remote_subscribe $(arg remote) /$(arg robotNamespace)/mission_manager/smach/container_init /$(arg robotNamespace)/mission_manager/smach/container_init 1 0"/>
+
+  <node pkg="rosservice" type="rosservice" name="get_container_status" args="call /$(arg namespace)/udp_bridge/remote_subscribe $(arg remote) /$(arg robotNamespace)/mission_manager/smach/container_status /$(arg robotNamespace)/mission_manager/smach/container_status 1 0"/>
+
+  <node pkg="rosservice" type="rosservice" name="get_container_structure" args="call /$(arg namespace)/udp_bridge/remote_subscribe $(arg remote) /$(arg robotNamespace)/mission_manager/smach/container_structure /$(arg robotNamespace)/mission_manager/smach/container_structure 1 0"/>
+
+</launch>
